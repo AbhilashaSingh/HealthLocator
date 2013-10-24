@@ -33,8 +33,7 @@ try {
  
     while (rs.next())
         System.out.println("Hospital Name = " + rs.getString("Name") + " Address = " + rs.getString("Address"));
-    rs.first();
-    
+   
    
  //Close the connection
    con.close();
