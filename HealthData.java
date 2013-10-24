@@ -9,7 +9,7 @@ public class HealthData {
  
 public static void main( String args[]) {
  
-String connectionURL = "jdbc:mysql://localhost:3307/locatehospital" + "user=root&password=password";
+String connectionURL = "jdbc:mysql://localhost:3307/locatehospital?" + "user=root&password=password";
 // Change the connection string according to your db, ip, username and password
  
 try {
