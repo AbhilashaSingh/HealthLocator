@@ -7,6 +7,7 @@ CREATE TABLE `locatehospital`.`hospital` (
   `Address` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`HCenterID`));
 
+
 -- Insert rows
 insert into locatehospital.hospital values (101,"Hospital1","Delhi","New Delhi","Address1");
 insert into locatehospital.hospital values (102,"Hospital2","Rajasthan","Jaipur","Address2");
@@ -22,3 +23,12 @@ insert into locatehospital.hospital values (110,"Hospital10","Tamil Nadu","Chenn
   
  -- Select the contents of table 
  SELECT * FROM locatehospital.hospital;
+
+
+-- Queries to populate drop down boxes
+SELECT State FROM locatehospital.hospital;
+SELECT city FROM locatehospital.hospital where State = "Bihar";
+
+
+-- Query to fetch the Hospital names and their addresses to populate the text area
+SELECT Name, Address FROM locatehospital.hospital where State ="Bihar" and City = "Patna";
